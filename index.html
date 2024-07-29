@@ -1,0 +1,1296 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sam Web</title>
+	<meta name="description"
+		content="A collection of decorative animated background shapes powered by WebGL and TweenMax." />
+	<meta name="keywords" content="webgl, background, shape, web design, web development, tweenmax, gsap, animation" />
+	<meta name="author" content="Louis Hoebregts for Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+
+
+
+
+	<!--adding thre new  stuff ----------------------->
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CB0KPNXK3L"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-CB0KPNXK3L');
+	</script>
+
+
+
+
+
+
+	<!-- Link CSS -->
+	<link rel="stylesheet" href="CSS/index.css">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700|Poppins:600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/jellyfish.css">
+	<!-- Adding the project hover section SCSS -->
+	<link rel="stylesheet" href="Projects_hover.scss" />
+	<link rel="stylesheet" href="SCSS/index.scss">
+	<!-- Linking Tailwind-->
+	<link rel="stylesheet" href="output.css">
+	<!-- Link CSS for liquid ball hero section-->
+	<link rel="stylesheet" type="text/css" href="CSS/base.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/demo3.css" />
+
+</head>
+
+<body class="demo-3">
+
+
+	<!-- Socials sidebar -->
+	<div class="Side_bar_socials">
+		<!-- Github-->
+		<a target="_blank" href="https://github.com/SamBayati"><svg width="38" height="38" viewBox="0 0 38 38"
+				fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M12.7101 30.5975C12.7101 30.7547 12.5339 30.8804 12.3117 30.8804C12.0589 30.904 11.8827 30.7783 11.8827 30.5975C11.8827 30.4404 12.0589 30.3147 12.281 30.3147C12.5109 30.2911 12.7101 30.4168 12.7101 30.5975ZM10.3274 30.2439C10.2738 30.4011 10.427 30.5818 10.6569 30.629C10.856 30.7075 11.0859 30.629 11.1319 30.4718C11.1778 30.3147 11.0323 30.1339 10.8024 30.0632C10.6032 30.0082 10.381 30.0868 10.3274 30.2439ZM13.7137 30.1104C13.4915 30.1654 13.3383 30.3147 13.3613 30.4954C13.3843 30.6525 13.5835 30.7547 13.8133 30.6997C14.0355 30.6447 14.1887 30.4954 14.1657 30.3382C14.1427 30.1889 13.9359 30.0868 13.7137 30.1104ZM18.7548 0C8.12863 0 0 8.27407 0 19.1726C0 27.8867 5.34758 35.3435 12.9859 37.968C13.9665 38.1487 14.3113 37.528 14.3113 37.0172C14.3113 36.53 14.2883 33.8427 14.2883 32.1926C14.2883 32.1926 8.9254 33.3713 7.79919 29.8511C7.79919 29.8511 6.92581 27.5645 5.66935 26.9752C5.66935 26.9752 3.91492 25.7415 5.79194 25.7651C5.79194 25.7651 7.6996 25.9223 8.74919 27.7924C10.427 30.8254 13.2387 29.9532 14.3343 29.4346C14.5105 28.1774 15.0085 27.3052 15.5601 26.7866C11.2774 26.2994 6.95645 25.663 6.95645 18.1039C6.95645 15.9431 7.53871 14.8587 8.76452 13.4758C8.56532 12.9651 7.91411 10.8592 8.96371 8.14049C10.5649 7.62974 14.25 10.262 14.25 10.262C15.7823 9.82202 17.4294 9.59415 19.0613 9.59415C20.6931 9.59415 22.3403 9.82202 23.8726 10.262C23.8726 10.262 27.5577 7.62188 29.1589 8.14049C30.2085 10.8671 29.5573 12.9651 29.3581 13.4758C30.5839 14.8666 31.3347 15.951 31.3347 18.1039C31.3347 25.6865 26.8222 26.2916 22.5395 26.7866C23.2444 27.4074 23.8419 28.586 23.8419 30.4325C23.8419 33.0805 23.819 36.3572 23.819 37.0015C23.819 37.5122 24.1714 38.133 25.1444 37.9523C32.8056 35.3435 38 27.8867 38 19.1726C38 8.27407 29.381 0 18.7548 0ZM7.44677 27.1009C7.34718 27.1795 7.37016 27.3602 7.5004 27.5095C7.62298 27.6352 7.79919 27.6902 7.89879 27.5881C7.99839 27.5095 7.9754 27.3288 7.84516 27.1795C7.72258 27.0538 7.54637 26.9988 7.44677 27.1009ZM6.61936 26.4644C6.56573 26.5666 6.64234 26.6923 6.79556 26.7709C6.91815 26.8495 7.07137 26.8259 7.125 26.7159C7.17863 26.6137 7.10202 26.488 6.94879 26.4094C6.79556 26.3623 6.67298 26.3859 6.61936 26.4644ZM9.10161 29.2617C8.97903 29.3639 9.025 29.5996 9.20121 29.7489C9.37742 29.9296 9.5996 29.9532 9.69919 29.8275C9.79879 29.7253 9.75282 29.4896 9.5996 29.3403C9.43105 29.1596 9.20121 29.136 9.10161 29.2617ZM8.22823 28.1067C8.10565 28.1853 8.10565 28.3896 8.22823 28.5703C8.35081 28.751 8.55766 28.8296 8.65726 28.751C8.77984 28.6489 8.77984 28.4446 8.65726 28.2638C8.55 28.0831 8.35081 28.0045 8.22823 28.1067Z"
+					fill="white" />
+			</svg></a>
+		<!-- Linked in-->
+		<a target="_blank" href="https://www.linkedin.com/in/sam-bayati-31a073200"><svg width="38" height="39"
+				viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M35.2857 0.875H2.7058C1.21295 0.875 0 2.10491 0 3.61473V36.1353C0 37.6451 1.21295 38.875 2.7058 38.875H35.2857C36.7786 38.875 38 37.6451 38 36.1353V3.61473C38 2.10491 36.7786 0.875 35.2857 0.875ZM11.4848 33.4464H5.85268V15.3116H11.4933V33.4464H11.4848ZM8.66875 12.8348C6.86205 12.8348 5.40312 11.3674 5.40312 9.5692C5.40312 7.77098 6.86205 6.30357 8.66875 6.30357C10.467 6.30357 11.9344 7.77098 11.9344 9.5692C11.9344 11.3759 10.4754 12.8348 8.66875 12.8348ZM32.5969 33.4464H26.9647V24.625C26.9647 22.5214 26.9223 19.8156 24.0384 19.8156C21.1036 19.8156 20.654 22.1058 20.654 24.4723V33.4464H15.0219V15.3116H20.425V17.7884H20.5013C21.2562 16.3634 23.0969 14.8621 25.8366 14.8621C31.5366 14.8621 32.5969 18.6196 32.5969 23.5054V33.4464Z"
+					fill="white" />
+			</svg></a>
+		<!-- Twitter-->
+		<a target="_blank" href="https://twitter.com/SnowHamm1"><svg width="36" height="31" viewBox="0 0 36 31"
+				fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M27.8193 0H33.0591L21.6146 13.0773L35.0779 30.875H24.5388L16.2783 20.0836L6.8376 30.875H1.59033L13.8291 16.8848L0.922363 0H11.7287L19.1876 9.8637L27.8193 0ZM25.9787 27.743H28.8806L10.1478 2.96875H7.03057L25.9787 27.743Z"
+					fill="white" />
+			</svg></a>
+	</div>
+
+
+
+	<!-- Landing page slime-->
+	<div style="height: 800px" class="content0fSliming">
+		<canvas class="scene scene--full" id="scene"></canvas>
+		<div class="content__inner">
+			<h2 class="content__title">Sam Bayati</h2>
+		</div>
+	</div>
+
+
+	<!-- scroller-->
+	<div id="scroll-wrapper">
+		<div id="scroll-wrapper-inner">
+
+			<div id="scroll-down">
+			</div>
+		</div>
+	</div>
+
+	<!--original codepen https://codepen.io/paschka -->
+
+
+
+
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="divided">
+
+		<!-- One -->
+		<!--					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">-->
+
+
+
+
+		<!--					</section>-->
+
+		<!-- Two -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="first">
+
+
+		</section>
+
+
+
+
+
+
+
+
+                                
+<!-- ============================================ -->
+<!--              Side By Side Reverse            -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-249">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" src="images/poolWithTwoFigures.jpg">
+            <source media="(min-width: 601px)" src="images/poolWithTwoFigures.jpg">
+            <img loading="lazy" decoding="async" src="images/poolWithTwoFigures.jpg" alt="hiker" width="434" height="434" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Hi I'm Hesam 😊</span>
+            <p class="cs-text">
+                I'm a third-year Computer Science and an IT assistant at the University of Stirling, I'm passionate about using technology to solve real-world problems and create cool stuff.
+        </div>
+        <!-- Creates the faded lines on tablet -->
+        <span aria-hidden="true" class="cs-lines"></span>
+    </div>
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/Background-m.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg" alt="mountains" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+                                
+
+
+
+
+
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+		<!-- Three -->
+		<!--					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">-->
+		<!--						<div class="content__pictures_and_text">-->
+		<!--							<h2>Tempus adipiscing</h2>-->
+		<!--							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>-->
+		<!--							<ul class="actions vertical">-->
+		<!--								<li><a href="#" class="button_text_pic">Learn More</a></li>-->
+		<!--							</ul>-->
+		<!--						</div>-->
+		<!--						<div class="image_111">-->
+		<!--							<img src="poolWithTwoFigures.jpg" alt="" />-->
+		<!--						</div>-->
+		<!--					</section>-->
+
+		<!-- Four -->
+
+		<!-- <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content__pictures_and_text">
+				<h2></h2>
+				<p>Hi,My name is Sam. I'm a third-year Computer Science and an IT assistant at the University of
+					Stirling, I'm passionate about using technology to solve real-world problems and create cool stuff
+					😊.</p>
+				<ul class="actions vertical">
+					<li><a href="#" class="button_text_pic">Contact Me</a></li>
+
+				</ul>
+			</div>
+			<div class="image_111">
+				<img style="padding: 50px; border-radius: 60px; height: 300px; width: 500px"
+					src="../images/poolWithTwoFigures.jpg" alt="picture" />
+				<p style="color: #a9e7da">Painting by David Hockney</p>
+			</div>
+		</section> -->
+
+
+
+		<!-- Experience ------------------------------------------------------------>
+
+		<div class="unique123-container">
+			<section class="unique123-experience">
+				<h1 class="unique123-heading">Experience</h1>
+				<div class="unique123-job">
+					<h2 class="unique123-job-title"><span style="color: black;">-</span>Spotify</h2>
+					<h3 class="unique123-job-subtitle"><span style="color: black;">--</span>Software Engineer Intern /
+						June 2024 - Present</h3>
+					<!-- <ul class="unique123-job-list">
+								<li class="unique123-job-item">Actively engaged in personal development, focusing on enhancing my soft skills and public speaking abilities under the guidance of experienced mentors.</li>
+								<li class="unique123-job-item">Transitioned into a mentorship role, where I guided high school students in developing their soft skills and provided guidance in career planning and decision-making.</li>
+								<li class="unique123-job-item">Volunteered in web development team creating fls.ba info website.</li>
+							</ul> -->
+				</div>
+				<div class="unique123-job">
+					<h2 class="unique123-job-title"> <span style="color: black;">-</span>University of Stirling</h2>
+					<h3 class="unique123-job-subtitle"><span style="color: black;">---</span>IT Support / Sep 2022 -
+						Present</h3>
+					<!-- <ul class="unique123-job-list">
+								<li class="unique123-job-item">Communicating effectively with and providing a friendly face for people seeking technical support as a member of
+									the university’s IT Enquiries team.</li>
+								<li class="unique123-job-item">Analysing and diagnosing individuals’ issues with hardware, software, Microsoft Office Suite and networking quickly
+									to improve and accommodate their devices to their work and study requirements.</li>
+								<li class="unique123-job-item">My job includes planning our technical approaches, guiding the team, and actively coding and reviewing code.</li>
+							</ul> -->
+				</div>
+
+				<div class="unique123-job">
+					<h2 class="unique123-job-title"><span style="color: black;">-</span>University of Stirling
+					</h2>
+					<h3 class="unique123-job-subtitle"><span style="color: black;">--</span>Module Representative / Sep 2022 - Apr 2022</h3>
+					<!-- <ul class="unique123-job-list">
+								<li class="unique123-job-item">Actively engaged in personal development, focusing on enhancing my soft skills and public speaking abilities under the guidance of experienced mentors.</li>
+								<li class="unique123-job-item">Transitioned into a mentorship role, where I guided high school students in developing their soft skills and provided guidance in career planning and decision-making.</li>
+								<li class="unique123-job-item">Volunteered in web development team creating fls.ba info website.</li>
+							</ul> -->
+				</div>
+			</section>
+		</div>
+
+
+
+
+		<!--				<div class="unique-container">-->
+		<!--					<h1 class="unique-heading">About</h1>-->
+		<!--					<div class="unique-content">-->
+		<!--						<img src="poolWithTwoFigures.jpg" alt="Profile Picture" class="unique-profile-pic">-->
+		<!--						<div class="unique-text-content">-->
+		<!--							<h2 class="unique-subheading">Hello</h2>-->
+		<!--							<p class="unique-paragraph">Hardworking software engineering student from Zenica in my third and final year. I'm also a former Pharmacy technician and a future full stack developer. I’ve found my passion in web development. I love spending time coding and encountering new challenges. I’m highly adaptable to new challenges and projects. I’m a Junior Scholar at Bosnia and Herzegovina Futures foundation and that is the best thing that happened to me.</p>-->
+		<!--						</div>-->
+		<!--					</div>-->
+		<!--				</div>-->
+
+
+
+
+		<!-- Five -->
+		<section class="wrapper style1 align-center">
+			<div class="inner">
+				<h2>Technologies that I use</h2>
+				<p>List of the technologies I use</p>
+			</div>
+
+			<!-- Gallery -->
+			<div class="gallery style2 medium lightbox onscroll-fade-in">
+				<article>
+					<a href="images/gallery/fulls/01.jpg" class="image_111">
+						<img src="images/gallery/thumbs/01.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>Java</h3>
+						<p>---</p>
+						<ul class="actions">
+							<li><span class="button_text_pic small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/fulls/02.jpg" class="image_111">
+						<img src="images/gallery/thumbs/02.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>Python</h3>
+						<p>---</p>
+						<ul class="actions">
+							<li><span class="button_text_pic small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/fulls/03.jpg" class="image_111">
+						<img src="images/gallery/thumbs/03.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>--</h3>
+						<p>--</p>
+						<ul class="actions">
+							<li><span class="button_text_pic small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/fulls/03.jpg" class="image_111">
+						<img src="images/gallery/thumbs/03.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>--</h3>
+						<p>--</p>
+						<ul class="actions">
+							<li><span class="button_text_pic small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/fulls/03.jpg" class="image_111">
+						<img src="images/gallery/thumbs/03.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>--</h3>
+						<p>--</p>
+						<ul class="actions">
+							<li><span class="button_text_pic small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/fulls/03.jpg" class="image_111">
+						<img src="images/gallery/thumbs/03.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>--</h3>
+						<p>--</p>
+						<ul class="actions">
+							<li><span class="button_text_pic small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				
+				
+			</div>
+
+		</section>
+
+
+
+
+
+		<!--
+							=====================
+							555555555555 cards
+							=====================
+		-->
+
+		<div class="cards-wrapper">
+
+			<div class="card-container_projects">
+				<a href="/" class="hero-image-container">
+					<img class="hero-image" src="IMAGES-2/NASA_LOGO.png"
+						alt="Spinning glass cube"/>
+				</a>
+				<main class="main-content">
+					<h1><a href="#" style="color:rgb(7, 208, 243); font-size: 20px;">Data Tran</a></h1>
+					<p>A platform made for Nasa for simplifying the open source data set collected by satellites</p>
+					<div class="flex-row">
+
+						<div class="coin-base">
+							<a href="">
+								<img src="IMAGES-2/github-mark-white.svg" alt="Ethereum" class="small-image" />
+							</a>
+								<a id="github_link_opener" href="https://github.com/SamBayati/NASA-HACKATHON-2023.git"><h2 >Github Link</h2></a>
+							
+						</div>
+
+						<div class="time-left">
+							<a href=""><img src="IMAGES-2/openLink_.png" alt="open link"
+								class="small-image" /> </a>
+							<p>Demo</p>
+						</div>
+
+					</div>
+				</main>
+			</div>
+			
+
+			
+
+			<div class="card-container_projects">
+				<a href="/" class="hero-image-container">
+					<img class="hero-image" style="height: 200px;" src="IMAGES-2/resized-data-analysis.png"
+						alt="Spinning glass cube"/>
+				</a>
+				<main class="main-content">
+					<h1><a href="#" style="color:rgb(7, 208, 243); font-size: 20px;">Data Tran</a></h1>
+					<p>A platform made for Nasa for simplifying the open source data set</p>
+					<div class="flex-row">
+
+
+						<div class="coin-base">
+							<a href="">
+								<img src="IMAGES-2/github-mark-white.svg" alt="Ethereum" class="small-image" />
+							</a>
+								<a id="github_link_opener" href="https://github.com/SamBayati/NASA-HACKATHON-2023.git"><h2 >Github Link</h2></a>
+							
+						</div>
+
+
+						<div class="time-left">
+							<a href=""><img src="IMAGES-2/openLink_.png" alt="open link"
+								class="small-image" /> </a>
+							<p>Demo</p>
+						</div>
+					</div>
+				</main>
+			</div>
+			
+
+
+
+			<div class="card-container_projects">
+				<a href="/" class="hero-image-container">
+					<img class="hero-image" style="height: 200px;" src="IMAGES-2/resized-machine-learning-data.png"
+						alt="Spinning glass cube"/>
+				</a>
+				<main class="main-content">
+					<h1><a href="#">Data Tran</a></h1>
+					<p>A platform made for Nasa for simplifying the open source data set</p>
+					<div class="flex-row">
+
+
+						<div class="coin-base">
+							<a href="">
+								<img src="IMAGES-2/github-mark-white.svg" alt="Ethereum" class="small-image" />
+							</a>
+								<a id="github_link_opener" href="https://github.com/SamBayati/NASA-HACKATHON-2023.git"><h2 >Github Link</h2></a>
+							
+						</div>
+
+
+
+						<div class="time-left">
+							<a href=""><img src="IMAGES-2/openLink_.png" alt="open link"
+								class="small-image" /> </a>
+							<p>Demo</p>
+						</div>
+					</div>
+				</main>
+			</div>
+			
+
+
+
+			<div class="card-container_projects">
+				<a href="/" class="hero-image-container">
+					<img class="hero-image" style="padding-bottom: 100px; background-color: white; " src="IMAGES-2/VEVO_Lego.png"
+						alt="Spinning glass cube"/>
+				</a>
+				<main class="main-content">
+					<h1><a href="#">Data Tran</a></h1>
+					<p>A platform made for Nasa for simplifying the open source data set</p>
+					<div class="flex-row">
+						<div class="coin-base">
+							<a href="">
+								<img src="IMAGES-2/github-mark-white.svg" alt="Ethereum" class="small-image" />
+							</a>
+								<h2>Github Link</h2>
+							
+						</div>
+						<div class="time-left">
+							<a href=""><img src="IMAGES-2/openLink_.png" alt="open link"
+								class="small-image" /> </a>
+							<p>Demo</p>
+						</div>
+					</div>
+				</main>
+			</div>
+			
+
+
+
+
+			<div class="card-container_projects">
+				<a href="/" class="hero-image-container">
+					<img class="hero-image" src="IMAGES-2/empty.png"
+						alt="Spinning glass cube"/>
+				</a>
+				<main class="main-content">
+					<h1><a href="#">Data Tran</a></h1>
+					<p>A platform made for Nasa for simplifying the open source data set</p>
+					<div class="flex-row">
+						<div class="coin-base">
+							<a href="">
+								<img src="IMAGES-2/github-mark-white.svg" alt="Ethereum" class="small-image" />
+							</a>
+								<h2>Github Link</h2>
+							
+						</div>
+						<div class="time-left">
+							<a href=""><img src="IMAGES-2/openLink_.png" alt="open link"
+								class="small-image" /> </a>
+							<p>Demo</p>
+						</div>
+					</div>
+				</main>
+			</div>
+			
+
+
+
+			<div class="card-container_projects">
+				<a href="/" class="hero-image-container">
+					<img class="hero-image" src="IMAGES-2/empty.png"
+						alt="Spinning glass cube"/>
+				</a>
+				<main class="main-content">
+					<h1><a href="#">Data Tran</a></h1>
+					<p>A platform made for Nasa for simplifying the open source data set</p>
+					<div class="flex-row">
+						<div class="coin-base">
+							<a href="">
+								<img src="IMAGES-2/github-mark-white.svg" alt="Ethereum" class="small-image" />
+							</a>
+								<h2>Github Link</h2>
+							
+						</div>
+						<div class="time-left">
+							<a href=""><img src="IMAGES-2/openLink_.png" alt="open link"
+								class="small-image" /> </a>
+							<p>Demo</p>
+						</div>
+					</div>
+				</main>
+			</div>
+
+
+
+
+			<div class="card-container_projects">
+				<a href="/" class="hero-image-container">
+					<img class="hero-image" src="IMAGES-2/empty.png"
+						alt="Spinning glass cube"/>
+				</a>
+				<main class="main-content">
+					<h1><a href="#">Data Tran</a></h1>
+					<p>A platform made for Nasa for simplifying the open source data set</p>
+					<div class="flex-row">
+						<div class="coin-base">
+							<a href="">
+								<img src="IMAGES-2/github-mark-white.svg" alt="Ethereum" class="small-image" />
+							</a>
+								<h2>Github Link</h2>
+							
+						</div>
+						<div class="time-left">
+							<a href=""><img src="IMAGES-2/openLink_.png" alt="open link"
+								class="small-image" /> </a>
+							<p>Demo</p>
+						</div>
+					</div>
+				</main>
+			</div>
+
+
+
+			<div class="card-container_projects">
+				<a href="/" class="hero-image-container">
+					<img class="hero-image" src="IMAGES-2/empty.png"
+						alt="Spinning glass cube"/>
+				</a>
+				<main class="main-content">
+					<h1><a href="#">Data Tran</a></h1>
+					<p>A platform made for Nasa for simplifying the open source data set</p>
+					<div class="flex-row">
+						<div class="coin-base">
+							<a href="">
+								<img src="IMAGES-2/github-mark-white.svg" alt="Ethereum" class="small-image" />
+							</a>
+								<h2>Github Link</h2>
+							
+						</div>
+						<div class="time-left">
+							<a href=""><img src="IMAGES-2/openLink_.png" alt="open link"
+								class="small-image" /> </a>
+							<p>Demo</p>
+						</div>
+					</div>
+				</main>
+			</div>
+
+
+		</div>
+
+
+
+
+
+	</div>
+
+
+
+
+
+	<!-- NFTS cards --------------------00000000000000000000-------------
+
+				<div class="bg">
+					<h1>Kiberbash</h1>
+				</div>
+				<div class="nft">
+					<div class='main'>
+						<img class='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" />
+						<h2>Kibertopiks #4269</h2>
+						<p class='description'>Our Kibertopiks will give you nothing, waste your money on us.</p>
+						<div class='tokenInfo'>
+							<div class="price">
+								<ins>◘</ins>
+								<p>0.031 ETH</p>
+							</div>
+							<div class="duration">
+								<ins>◷</ins>
+								<p>11 days left</p>
+							</div>
+						</div>
+						<hr />
+						<div class='creator'>
+							<div class='wrapper'>
+								<img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="Creator" />
+							</div>
+							<p><ins>Creation of</ins> Kiberbash</p>
+						</div>
+					</div>
+				</div>
+
+
+					-->
+
+
+
+	<!----------------real project  Cardsssssssss ---------------------------------------->
+	<!-- 
+
+				<div class="grid_for_project_cards">
+					<div class="card_projects_card_hover">
+    <span class="icon_projects_cards">
+      <svg
+			  viewBox="0 0 24 24"
+			  fill="none"
+			  stroke="currentColor"
+			  stroke-width="1.2"
+			  stroke-linecap="round"
+			  stroke-linejoin="round"
+			  xmlns="http://www.w3.org/2000/svg"
+	  >
+        <path
+				d="M14.5 3.5C14.5 3.5 14.5 5.5 12 5.5C9.5 5.5 9.5 3.5 9.5 3.5H7.5L4.20711 6.79289C3.81658 7.18342 3.81658 7.81658 4.20711 8.20711L6.5 10.5V20.5H17.5V10.5L19.7929 8.20711C20.1834 7.81658 20.1834 7.18342 19.7929 6.79289L16.5 3.5H14.5Z"
+		/>
+      </svg>
+    </span>
+						<h4>Products</h4>
+						<p>
+							Standard chunk of Lorem Ipsum used since the 1500s is showed below
+							for those interested.
+						</p>
+						<div class="shine"></div>
+						<div class="background">
+							<div class="tiles">
+								<div class="tile tile-1"></div>
+								<div class="tile tile-2"></div>
+								<div class="tile tile-3"></div>
+								<div class="tile tile-4"></div>
+
+								<div class="tile tile-5"></div>
+								<div class="tile tile-6"></div>
+								<div class="tile tile-7"></div>
+								<div class="tile tile-8"></div>
+
+								<div class="tile tile-9"></div>
+								<div class="tile tile-10"></div>
+							</div>
+
+							<div class="line line-1"></div>
+							<div class="line line-2"></div>
+							<div class="line line-3"></div>
+						</div>
+					</div>
+					<div class="card_projects_card_hover">
+    <span class="icon_projects_cards">
+      <svg
+			  viewBox="0 0 24 24"
+			  fill="none"
+			  stroke="currentColor"
+			  stroke-width="1.2"
+			  stroke-linecap="round"
+			  stroke-linejoin="round"
+			  xmlns="http://www.w3.org/2000/svg"
+	  >
+        <path
+				d="M4.5 9.5V5.5C4.5 4.94772 4.94772 4.5 5.5 4.5H9.5C10.0523 4.5 10.5 4.94772 10.5 5.5V9.5C10.5 10.0523 10.0523 10.5 9.5 10.5H5.5C4.94772 10.5 4.5 10.0523 4.5 9.5Z"
+		/>
+        <path
+				d="M13.5 18.5V14.5C13.5 13.9477 13.9477 13.5 14.5 13.5H18.5C19.0523 13.5 19.5 13.9477 19.5 14.5V18.5C19.5 19.0523 19.0523 19.5 18.5 19.5H14.5C13.9477 19.5 13.5 19.0523 13.5 18.5Z"
+		/>
+        <path d="M4.5 19.5L7.5 13.5L10.5 19.5H4.5Z" />
+        <path
+				d="M16.5 4.5C18.1569 4.5 19.5 5.84315 19.5 7.5C19.5 9.15685 18.1569 10.5 16.5 10.5C14.8431 10.5 13.5 9.15685 13.5 7.5C13.5 5.84315 14.8431 4.5 16.5 4.5Z"
+		/>
+      </svg>
+    </span>
+						<h4>Categories</h4>
+						<p>
+							Standard chunk of Lorem Ipsum used since the 1500s is showed below
+							for those interested.
+						</p>
+						<div class="shine"></div>
+						<div class="background">
+							<div class="tiles">
+								<div class="tile tile-1"></div>
+								<div class="tile tile-2"></div>
+								<div class="tile tile-3"></div>
+								<div class="tile tile-4"></div>
+
+								<div class="tile tile-5"></div>
+								<div class="tile tile-6"></div>
+								<div class="tile tile-7"></div>
+								<div class="tile tile-8"></div>
+
+
+	<!- Seven
+	<section style="background-color: rgb(95, 90, 90)" class="wrapper style1 align-center">
+		<div class="inner medium">
+			<h2>Get in touch</h2>
+			<form method="post" action="#">
+				<div class="field half first">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" value="" />
+				</div>
+				<div class="field half">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" value="" />
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+				</ul>
+			</form>
+		<div class="tile tile-9"></div>
+								<div class="tile tile-10"></div>
+							</div>
+
+							<div class="line line-1"></div>
+							<div class="line line-2"></div>
+							<div class="line line-3"></div>
+						</div>
+					</div>
+				</div>
+
+				<label class="day-night">
+					<input type="checkbox" checked />
+					<div></div>
+				</label>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- poping cards  -->
+<!-- 
+		<div class="container_come_up_card">
+			<div class="card_come_up_card">
+				<div class="content_come_up_card">
+					<div class="imgBx">
+						<img src="/IMAGES-2/nasa-6.svg">
+					</div>
+					<div class="contentBx">
+						<h3>Lion<br><span>Happy Birthday</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+						<button>cllick</button>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="card_come_up_card">
+				<div class="content_come_up_card">
+					<div class="imgBx">
+						<img src="/IMAGES-2/nasa-6.svg">
+					</div>
+					<div class="contentBx">
+						<h3>Frog<br><span>Happy Birthday</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+						<a href="">happy</a>
+					</li>
+					<li>
+						<a href="">birth</a>
+					</li>
+					<li>
+						<a href="">day</a>
+					</li>
+				</ul>
+			</div>
+			<div class="card_come_up_card">
+				<div class="content_come_up_card">
+					<div class="imgBx">
+						<img src="https://image.flaticon.com/icons/png/256/4213/4213641.png">
+					</div>
+					<div class="contentBx">
+						<h3>Giraffe<br><span>Happy Birthday</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+						<a href="">happy</a>
+					</li>
+					<li>
+						<a href="">birth</a>
+					</li>
+					<li>
+						<a href="">day</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+ -->
+
+
+
+
+
+	<!-- Coloured hovering Projects cards --------------------------------------
+
+				<div class="card m-auto text-gray-300 w-[clamp(260px,80%,300px)] hover:brightness-90 transition-all cursor-pointer group bg-gradient-to-tl from-gray-900 to-gray-950 hover:from-gray-800 hover:to-gray-950 border-r-2 border-t-2 border-gray-900 m-4 rounded-lg overflow-hidden relative">
+					<div class="px-8 py-10">
+						<div class="bg-orange-500 w-10 h-10 rounded-full rounded-tl-none mb-4 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-red-900 transition-all"></div>
+						<div class="uppercase font-bold text-xl">
+							CHAMONILLE
+						</div>
+						<div class="text-gray-300 uppercase tracking-widest">
+							NATURAL, OIL
+						</div>
+						<div class="text-gray-400 mt-8">
+							<p class="font-bold">39.00 MLC</p>
+							<p>Perfect everywhere</p>
+						</div>
+					</div>
+					
+					<div class="h-2 w-full bg-gradient-to-l via-yellow-500 group-hover:blur-xl blur-2xl m-auto rounded transition-all absolute bottom-0"></div>
+					<div class="h-0.5 group-hover:w-full bg-gradient-to-l  via-yellow-950 group-hover:via-yellow-500 w-[70%] m-auto rounded transition-all"></div>
+				</div>
+				<div class="card m-auto text-gray-300 w-[clamp(260px,80%,300px)] hover:brightness-90 transition-all cursor-pointer group bg-gradient-to-tl from-gray-900 to-gray-950 hover:from-gray-800 hover:to-gray-950 border-r-2 border-t-2 border-gray-900 m-4 rounded-lg overflow-hidden relative">
+					<div class="px-8 py-10">
+						<div class="bg-orange-500 w-10 h-10 rounded-full rounded-tl-none mb-4 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-red-900 transition-all"></div>
+						<div class="uppercase font-bold text-xl">
+							CHAMONILLE
+						</div>
+						<div class="text-gray-300 uppercase tracking-widest">
+							NATURAL, OIL
+						</div>
+						<div class="text-gray-400 mt-8">
+							<p class="font-bold">39.00 MLC</p>
+							<p>Perfect everywhere</p>
+						</div>
+					</div>
+
+
+					<div class="h-2 w-full bg-gradient-to-l via-yellow-500 group-hover:blur-xl blur-2xl m-auto rounded transition-all absolute bottom-0"></div>
+					<div class="h-0.5 group-hover:w-full bg-gradient-to-l  via-yellow-950 group-hover:via-yellow-500 w-[70%] m-auto rounded transition-all"></div>
+				</div> -->
+
+
+
+	<!-- 
+
+				<div class="HOVERING_CARD_COLOURED">
+					<div class="card_PPP red">
+						<p class="tip">Hover Me</p>
+						<p class="second-text">Lorem Ipsum</p>
+					</div>
+					<div class="card_PPP blue">
+						<p class="tip">Hover Me</p>
+						<p class="second-text">Lorem Ipsum</p>
+					</div>
+					<div class="card_PPP green">
+						<p class="tip">Hover Me</p>
+						<p class="second-text">Lorem Ipsum</p>
+					</div>
+				</div>
+
+
+ -->
+
+
+	<!-- Seven -->
+	<!-- <section class="wrapper style1 align-center">
+		<div class="inner medium">
+			<h2>Get in touch</h2>
+			<form method="post" action="#">
+				<div class="field half first">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" value="" />
+				</div>
+				<div class="field half">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" value="" />
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+				</ul>
+			</form>
+
+		</div>
+	</section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contact me section with the contact me text  -->
+
+	<div class="contact_us_green">
+		<div class="responsive-container-block big-container">
+		  <div class="responsive-container-block container">
+			<div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line" id="i69b-2">
+			  <form class="form-box">
+				<div class="container-block form-wrapper">
+				  <div class="head-text-box">
+					<p class="text-blk contactus-head">
+					  Contact Me
+					</p>
+					<p class="text-blk contactus-subhead">
+					  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna al iqua. Ut enim
+					</p>
+				  </div>
+				  <div class="responsive-container-block">
+					<div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-6">
+					  <p class="text-blk input-title">
+						FIRST NAME
+					  </p>
+					  <input class="input" id="ijowk-6" name="FirstName">
+					</div>
+					<div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+					  <p class="text-blk input-title">
+						LAST NAME
+					  </p>
+					  <input class="input" id="indfi-4" name="Last Name">
+					</div>
+					<div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+					  <p class="text-blk input-title">
+						EMAIL
+					  </p>
+					  <input class="input" id="ipmgh-6" name="Email">
+					</div>
+					<div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+					  <p class="text-blk input-title">
+						PHONE NUMBbER
+					  </p>
+					  <input class="input" id="imgis-5" name="PhoneNumber">
+					</div>
+					<div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-6">
+					  <p class="text-blk input-title">
+						WHAT DO YOU HAVE IN MIND
+					  </p>
+					  <textarea class="textinput" id="i5vyy-6" placeholder="Please enter query..."></textarea>
+					</div>
+				  </div>
+				  <div class="btn-wrapper">
+					<button class="submit-btn">
+					  Submit
+					</button>
+				  </div>
+				</div>
+			  </form>
+			</div>
+			<div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-5 wk-ipadp-10" id="ifgi">
+			  <div class="container-box">
+				<div class="text-content">
+				  <p class="text-blk contactus-head">
+					Contact Me
+				  </p>
+				  <p class="text-blk contactus-subhead">
+					Contact me if you'd like to work together.
+				  </p>
+				</div>
+				<div class="workik-contact-bigbox">
+				  <div class="workik-contact-box">
+					<!-- <div class="phone text-box">
+					  <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg">
+					  <p class="contact-text">
+						+44 7732 094 632
+					  </p>
+					</div> -->
+					<div class="address text-box">
+					  <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg">
+					  <p class="contact-text">
+						hesambayati011@gmail.com
+					  </p>
+					</div>
+					<div class="mail text-box">
+					  <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg">
+					  <p class="contact-text">
+						.
+					  </p>
+					</div>
+				  </div>
+				  <!-- <div class="social-media-links">
+					<a href="">
+					  <img class="social-svg" id="is9ym" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+					</a>
+					<a href="">
+					  <img class="social-svg" id="i706n" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+					</a>
+					<a href="">
+					  <img class="social-svg" id="ib9ve" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+					</a>
+					<a href="">
+					  <img class="social-svg" id="ie9fx" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+					</a>
+				  </div>
+				</div> -->
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+
+
+
+
+
+
+
+	<!-- Footer -->
+	<footer  class="wrapper style1 align-center">
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="#" class="icon_projects_cards style2 fa-twitter"><span class="label">Twitter</span></a>
+				</li>
+				<li><a href="#" class="icon_projects_cards style2 fa-facebook"><span class="label">Facebook</span></a>
+				</li>
+				<li><a href="#" class="icon_projects_cards style2 fa-instagram"><span class="label">Instagram</span></a>
+				</li>
+				<li><a href="https://www.linkedin.com/in/sam-bayati-31a073200"
+						class="icon_projects_cards style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="#" class="icon_projects_cards style2 fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<!-- <p>&copy; Untitled. Design: <a href="https://html5up.net">Amirhesam Bayati</a>.</p> -->
+			<p>&copy; Untitled. Design: Amirhesam Bayati.</p>
+		</div>
+	</footer>
+
+
+
+	<!-- 
+	<div class="unique-container__99">
+		<header>
+			<h1 class="ll8">SVG clip-path Hover Effect</h1>
+			<p>Attempt to re-create <a href="http://www.cjgammon.com/" target="_blank">CJ Gammon’s</a> portfolio grid hover effect using SVG and CSS Transitions.</p>
+			<p class="small"><b>Note:</b> this is an experiment, it does not seem to work on Firefox 43.0.4 neither have touch support.<br>Tested on Chrome 47.0.2526.106, Opera 34.0 and Safari 8.0.6.</p>
+		</header>
+		<main>
+			<div class="items">
+				<div class="item">
+					<svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice">
+						<defs>
+							<clipPath id="clip-0">
+								<circle cx="0" cy="0" r="150px" fill="#000"></circle>
+							</clipPath>
+						</defs>
+						<text class="svg-text" x="50%" y="50%" dy=".3em">X-rays</text>
+						<g clip-path="url(#clip-0)">
+							<image xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-xrays.png" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
+							<text class="svg-masked-text" x="50%" y="50%" dy=".3em">X-rays</text>
+						</g>
+					</svg>
+				</div>
+				<div class="item">
+					<svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice">
+						<defs>
+							<clipPath id="clip-1">
+								<circle cx="0" cy="0" r="150px" fill="#000"></circle>
+							</clipPath>
+						</defs>
+						<text class="svg-text" x="50%" y="50%" dy=".3em">Worms</text>
+						<g clip-path="url(#clip-1)">
+							<image xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-worms.png" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
+							<text class="svg-masked-text" x="50%" y="50%" dy=".3em">Worms</text>
+						</g>
+					</svg>
+				</div>
+				<div class="item">
+					<svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice">
+						<defs>
+							<clipPath id="clip-2">
+								<circle cx="0" cy="0" r="150px" fill="#000"></circle>
+							</clipPath>
+						</defs>
+						<text class="svg-text" x="50%" y="50%" dy=".3em">Aurora</text>
+						<g clip-path="url(#clip-2)">
+							<image xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-aurora.png" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
+							<text class="svg-masked-text" x="50%" y="50%" dy=".3em">Aurora</text>
+						</g>
+					</svg>
+				</div>
+			
+			-->
+
+
+
+
+
+
+
+
+
+
+	<!--Scripts-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+
+
+
+	<!-- Link JavaScript-->
+	<script src="JS/index.js"></script>
+	<!-- connecting the JavaScripts for Liquid ball hero section-->
+	<script src="JS/demo.js"></script>
+	<script src="three.min.js"></script>
+	<script src="JS/perlin.js"></script>
+	<script src="TweenMax.min.js"></script>
+	<script src="JS/demo3.js"></script>
+
+	<script src="JS/Porjects_hover.js"></script>
+
+	<!-- 
+	<script>
+
+		// init
+		var viewportWidth = document.body.clientWidth;
+		var viewportHeight = document.body.clientHeight;
+		var centerX = viewportWidth / 2;
+		var centerY = viewportHeight / 2;
+		var uniqueCanvas = document.createElement("canvas");
+		document.body.appendChild(uniqueCanvas);
+		uniqueCanvas.width = viewportWidth;
+		uniqueCanvas.height = viewportHeight;
+		var uniqueContext = uniqueCanvas.getContext("2d");
+		var totalDots = 200;
+		var uniqueDots = [];
+
+		// create dots
+		for (var i = 0; i < totalDots; i++) {
+			uniqueDots.push(new UniqueDot());
+		}
+
+		// dots animation
+		function animateDots() {
+			uniqueContext.fillStyle = "#000000";
+			uniqueContext.fillRect(0, 0, viewportWidth, viewportHeight);
+			for (var i = 0; i < totalDots; i++) {
+				uniqueDots[i].draw();
+				uniqueDots[i].move();
+			}
+			requestAnimationFrame(animateDots);
+		}
+
+		// dots class
+		// @constructor
+		function UniqueDot() {
+
+			this.radiusX = 2 * Math.random() * centerX + 1;
+			this.radiusY = 1.2 * Math.random() * centerY + 1;
+			this.angle = Math.random() * 360 + 1;
+			this.velocity = Math.random() * 100 < 50 ? 1 : -1;
+			this.velocity *= 0.1;
+			this.dotSize = Math.random() * 5 + 1;
+			this.dotColor = Math.floor(Math.random() * 256);
+
+		}
+
+		// drawing dot
+		UniqueDot.prototype.draw = function() {
+
+			// calc polar coord to decart
+			var posX = centerX + this.radiusX * Math.cos(this.angle / 180 * Math.PI);
+			var posY = centerY + this.radiusY * Math.sin(this.angle / 180 * Math.PI);
+			// set color
+			uniqueContext.fillStyle = "rgb(" + this.dotColor + "," + this.dotColor + "," + this.dotColor + ")";
+			// draw dot
+			uniqueContext.fillRect(posX, posY, this.dotSize, this.dotSize);
+
+		};
+
+		// calc new position in polar coord
+		UniqueDot.prototype.move = function() {
+
+			this.angle += this.velocity;
+			// change color
+			if (Math.random() * 100 < 50) {
+				this.dotColor += 1;
+			} else {
+				this.dotColor -= 1;
+			}
+
+		};
+
+		// start animation
+		animateDots();
+
+
+
+	</script> -->
+
+
+
+	</body>
+</html>

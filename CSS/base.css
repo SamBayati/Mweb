@@ -1,0 +1,183 @@
+body {
+    font-family: 'Barlow', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color: #57585c;
+    color: var(--color-text);
+    background-color: black;
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+/* Icons */
+.icon_projects_cards {
+    display: block;
+    width: 1.5em;
+    fill: currentColor;
+}
+
+.icon--keyboard {
+    display: none;
+}
+
+main {
+    position: relative;
+    width: 100%;
+}
+
+.content0fSliming {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* Add the following styles to make the content scroll behind the fixed element */
+.content--fixed {
+
+    z-index: 1000; /* Adjust the z-index based on your needs */
+    top: 0;
+    left: 0;
+    display: grid;
+    align-content: space-between;
+    width: 100%;
+    max-width: none;
+    padding: 1.5em;
+    pointer-events: none;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 4em;
+    grid-template-areas: 'header ...';
+}
+
+.content--fixed a {
+    pointer-events: auto;
+}
+
+/* Canvas positions */
+.content__inner {
+    grid-area: 1 / 1 / 1 / 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.scene {
+    position: absolute;
+}
+
+.scene--left {
+    width: 100vmin;
+    transform: translate3d(-50vmin, 0, 0);
+}
+
+.scene--full {
+    width: 100%;
+}
+
+.scene--up {
+    width: 150vmin;
+    top: -50vh;
+    left: 50%;
+    margin-left: -75vmin;
+}
+
+@media screen and (min-width: 55em) {
+    .icon--keyboard {
+        position: absolute;
+        right: 0.55em;
+        bottom: -30%;
+        display: block;
+        width: 54px;
+        fill: var(--color-link);
+    }
+    .demos {
+        display: flex;
+        padding-right: 80px;
+        justify-self: end;
+    }
+    .demo {
+        display: block;
+        width: 17px;
+
+        margin: 0 4px;
+        border-radius: 50%;
+        background: var(--color-link);
+    }
+    a.demo--current {
+        background: var(--color-link-hover);
+    }
+    .demo span {
+        line-height: 1;
+        position: absolute;
+        right: 100%;
+        display: none;
+        margin: 0 1em 0 0;
+    }
+    .demo--current span {
+        display: block;
+    }
+}
+
+
+
+
+/* Side bar */
+.Side_bar_socials {
+	position: fixed;
+	top: 47%;
+	right: 20px;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	width: 38px;
+	height: 160.875px;
+	align-items: flex-start;
+	gap: 20px;
+	opacity: 0; /* Initially set opacity to 0 */
+	transition: opacity 0.1s ease-in-out; /* Add a smooth fade-in transition */
+	z-index: 2;
+
+}
+  
+  /* CSS animations ==============================================*/
+  .Side_bar_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px; /* Increase the gap between SVGs */
+  }
+  
+  .Side_bar_socials a svg {
+  opacity: 1;
+  transform: translateX(0); /* Updated to move to the left on hover */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .Side_bar_socials a:hover svg {
+  
+  opacity: 0.5;
+  transform: translateX(-20px); /* Adjust the distance to move to the left */
+  
+  }
+  /* =====================================================*/
+  
+  .Side_bar_socials.show {
+	opacity: 1; /* Show the sidebar_socials with opacity 1 */
+  }
+  
+  /* Increase the font-size for the icons */
+  .Side_bar_socials i {
+	font-size: 24px;
+  }
